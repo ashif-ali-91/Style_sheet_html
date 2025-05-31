@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Superhero - Ashifali</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #300202, #f30404);
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color:#f43202
+      padding:0px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    h1 {
+      margin: 0;
+      padding: 2%;
+      font-size: 3em;
+      text-shadow: 2px 2px #000;
+    }
+
+    img {
+      margin: 30px 0 10px;
+      width: 400px;
+      flex-wrap: wrap;
+      border-radius: 10px;
+      border: 4px solid #fff;
+      box-shadow: 0 0 20px #ff0000;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1) rotate(2deg);
+    
+    }
+    .story {
+      max-width: 600px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+
+    .quote-box {
+      margin-top: 30px;
+    }
+
+    .quote-btn {
+      background-color: #ffcc00;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .quote-btn:hover {
+      background-color: #fff200;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .quote {
+      max-width: 500px;
+      margin: 20px auto 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 10px;
+      font-style: italic;
+      display: none;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    input[type="checkbox"]:checked ~ .quote {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 0.9em;
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><bold>ASHIF ALI</bold></h1>
+  </header>
+
+  <img src="wb.jpg"   alt="ashif ali">
+  <br>
+    <img src="wb2.jpg"   alt="ashif ali">
+
+  
+
+  <div class="story">
+    <p>
+     🖥️🖥️Web Developer with a passion for building responsive, user-friendly websites.
+Skilled in HTML, CSS, JavaScript, and modern frameworks for front-end and back-end development.
+Proven ability to design and implement web solutions that meet client needs and deliver a seamless user experience.
+Strong problem-solving skills and a keen eye for optimization and performance enhancements.
+Committed to continuous learning and staying updated with the latest web technologies and best practices.
+    </p>
+  </div>
+
+  <div class="quote-box">
+    <label for="toggle-quote">
+      <button class="quote-btn">Show Contact information </button>
+    </label>
+    <input type="checkbox" id="toggle-quote" />
+    <div class="quote">
+     "phone:9585523407"  <br> — Ashif ali
+    </div>
+  </div>
+
+  <footer>
+    Thanks you for your vist❤ by ashif!!
+  </footer>
+
+</body>
+</html>
