@@ -4,138 +4,187 @@
   <meta charset="UTF-8">
   <title>My Superhero - Ashifali</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #300202, #f30404);
-      color: #fff;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    header {
-      background-color:#f43202
-      padding:0px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-    }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  scroll-behavior: smooth;
+}
 
-    h1 {
-      margin: 0;
-      padding: 2%;
-      font-size: 3em;
-      text-shadow: 2px 2px #000;
-    }
+header {
+  background: #111;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-    img {
-      margin: 30px 0 10px;
-      width: 400px;
-      flex-wrap: wrap;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #00d4ff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00d4ff;
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#home .hero {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  background: #00d4ff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #00aaff;
+  color: #fff;
+}
+img {
+     
+      width: 200px;
       border-radius: 10px;
       border: 4px solid #fff;
-      box-shadow: 0 0 20px #ff0000;
+      box-shadow: 0 0 20px #0e0bd9;
       transition: transform 0.5s ease;
     }
 
     img:hover {
       transform: scale(1.1) rotate(2deg);
-    
-    }
-    .story {
-      max-width: 600px;
-      margin: 20px auto;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 10px;
-      font-size: 1.1em;
-      line-height: 1.5;
     }
 
-    .quote-box {
-      margin-top: 30px;
-    }
+#projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
-    .quote-btn {
-      background-color: #ffcc00;
-      color: #000;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1em;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
+.card {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
 
-    .quote-btn:hover {
-      background-color: #fff200;
-    }
+.card:hover {
+  transform: translateY(-10px);
+  background: #2d2d2d;
+}
 
-    input[type="checkbox"] {
-      display: none;
-    }
-
-    .quote {
-      max-width: 500px;
-      margin: 20px auto 0;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 15px;
-      border-radius: 10px;
-      font-style: italic;
-      display: none;
-      animation: fadeIn 1s ease-in-out forwards;
-    }
-
-    input[type="checkbox"]:checked ~ .quote {
-      display: block;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    footer {
-      margin-top: 40px;
-      padding: 15px;
-      font-size: 0.9em;
-      background-color: #222;
-    }
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #000;
+  color: #aaa;
+}
   </style>
 </head>
 <body>
-
   <header>
-    <h1><bold>ASHIF ALI</bold></h1>
+    <nav>
+      <h1>Ashif Ali</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <img src="wb.jpg"   alt="ashif ali">
-  <br>
-    <img src="wb2.jpg"   alt="ashif ali">
-
-  
-
-  <div class="story">
-    <p>
-     🖥️🖥️Web Developer with a passion for building responsive, user-friendly websites.
-Skilled in HTML, CSS, JavaScript, and modern frameworks for front-end and back-end development.
-Proven ability to design and implement web solutions that meet client needs and deliver a seamless user experience.
-Strong problem-solving skills and a keen eye for optimization and performance enhancements.
-Committed to continuous learning and staying updated with the latest web technologies and best practices.
-    </p>
-  </div>
-
-  <div class="quote-box">
-    <label for="toggle-quote">
-      <button class="quote-btn">Show Contact information </button>
-    </label>
-    <input type="checkbox" id="toggle-quote" />
-    <div class="quote">
-     "phone:9585523407"  <br> — Ashif ali
+  <section id="home">
+    <div class="hero">
+      <h2>Hello, I'm Ashif</h2>
+      <img a src="wb2.jpg">
+      <p>Aspiring Software Developer and Devops Engineer</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
-  </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a Computer Science student passionate about web development, personal finance, and inspiring others. I create content that motivates and teaches people how to grow in life and career.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Personal Finance Tracker</h3>
+        <p>Built with HTML, CSS, JS. Tracks income, expenses, and goals.</p>
+      </div>
+      <div class="card">
+        <h3>YouTube Channel</h3>
+        <p>Motivational content on mindset, business, and self-growth.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>This responsive website you're seeing now!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: ashif12666@gmail.com</p>
+    <p>LinkedIn:https://linkedin.com/in/ashif-ali</p>
+  </section>
 
   <footer>
-    Thanks you for your vist❤ by ashif!!
+    <p>© 2025 Ashif Ali. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
